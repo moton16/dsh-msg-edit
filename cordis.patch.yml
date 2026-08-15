@@ -1,0 +1,9 @@
+# dsh-msg-edit bundle patch.
+# Inserted after the dsh-base / dsh-web-app bundle layers; profile-level
+# cordis.patch.yml and --patch overlays can override these rows by id.
+- insert:
+    - id: msg-edit-host
+      name: '@moton16/dsh-msg-edit'
+
+    - id: ui-msg-edit
+      name: '@moton16/dsh-msg-edit/client'
