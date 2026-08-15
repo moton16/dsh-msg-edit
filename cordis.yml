@@ -1,0 +1,18 @@
+# dsh-msg-edit cordis composition entries.
+#
+# This file is the hand-merge form of the bundle's plugin rows. The bundle is
+# normally installed via `dsh plugin add @moton16/dsh-msg-edit`, which reads
+# `dsh.bundle.patch` (cordis.patch.yml) automatically. If you prefer to wire
+# the plugin manually, merge this entry list into your profile's
+# `$DSH_HOME/profiles/<profile>/cordis.patch.yml`, or apply it as an overlay:
+#
+#   dsh web --profile web --patch ./cordis.yml
+#
+# Rows: msg-edit-host (node-side HTTP RPC plugin) and ui-msg-edit (browser
+# dsh.client UI plugin). Both must load together.
+- insert:
+    - id: msg-edit-host
+      name: '@moton16/dsh-msg-edit'
+
+    - id: ui-msg-edit
+      name: '@moton16/dsh-msg-edit/client'

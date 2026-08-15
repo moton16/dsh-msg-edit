@@ -42,6 +42,7 @@ dsh plugin --profile web add github:moton16/dsh-msg-edit
          name: '@moton16/dsh-msg-edit/client'
    ```
 3. 手动重启 dsh web，浏览器 Ctrl+F5。
+   或直接以本仓库的 `cordis.yml` 作为 `--patch` overlay 启动：`dsh web --profile web --patch ./cordis.yml`。
 
 ## 验证
 
